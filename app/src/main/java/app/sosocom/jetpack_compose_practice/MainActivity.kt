@@ -28,16 +28,19 @@ fun SetView() {
     Jetpack_compose_practiceTheme {
         // A surface container using the 'background' color from the theme
         Surface(color = MaterialTheme.colors.background) {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(color = Color.Blue)
-                    .padding(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+            Box(modifier = Modifier
+                .background(color = Color.Green)
+                .fillMaxWidth()
+                .height(200.dp)
             ) {
                 Text("Hello")
-                Spacer(Modifier.width(16.dp))
-                Text("World")
+                Box(
+                    modifier = Modifier.fillMaxSize()
+                        .padding(16.dp),
+                    contentAlignment = Alignment.BottomEnd
+                ) {
+                    Text("1234455~~~~~~!!!")
+                }
             }
         }
     }
