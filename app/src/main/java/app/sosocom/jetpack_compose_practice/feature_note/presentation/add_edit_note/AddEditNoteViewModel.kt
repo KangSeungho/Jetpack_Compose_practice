@@ -88,7 +88,7 @@ class AddEditNoteViewModel @Inject constructor(
                 )
             }
 
-            is AddEditNoteEvent.ChangeColorFocus -> {
+            is AddEditNoteEvent.ChangeColor -> {
                 _noteColor.value = event.color
             }
 
